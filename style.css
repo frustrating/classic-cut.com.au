@@ -214,13 +214,13 @@ footer {
  *  Red Background
  **********************************************************************/
 .red {
-  background: #303b59;
+  background: rgb(48,59,89,0.9);
   display:block;
   padding:50px;
   text-align: center;
   margin: 20px;
   height:auto;
-  opacity: 0.9;
+  ;
   
   
 }
