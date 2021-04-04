@@ -14,22 +14,22 @@
     <ul class="main-nav">
         <li><a href="classic-cut.com.au"><img src="./img/main-transparent-high.png " alt="Smiley face" width="145.7" height="80" ></a></li>
         <li><a href="">About</a></li>
-        <li><a href="">What we do</a></li>
+        <li><a href="#what-we-do">What we do</a></li>
         <li><a href="">Our Team</a></li>
-        <li class="push"><a href="">Get in touch</a></li>
+        <li class="push"><a href="#contact">Get in touch</a></li>
     </ul>
   </nav>
   <div class="container zone red">
     <img src="./img/main-transparent-high.png " class="main-img" alt="Smiley face" width="600" height="280" ><br>
     <h1 class="text-center col-12 title-text"><strong>Locally owned and operated with over 30 years experience.</strong></h1>
   </div>
-    <div>
+    
   
     
   
   
   </div>
-  
+  <a id="what-we-do">
   <div class="zone blue grid-wrapper">
     <div class="box zone"><img src="./img/files_2.png"></div>
     <div class="box zone"><img src="./img/server_2_2.png"></div>
@@ -40,21 +40,40 @@
     <div class="box zone"><img src="./img/desktop_analytics_2.png"></div>
     <div class="box zone"><img src="./img/server_safe_2.png"></div>
   </div>
-
+  </a>
 
 
   </div>
 
-  <div class="contact-container">
-
-    <form>
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname">
-    </form> 
-
+  <div class="container zone about-us">
+    
+    <h2 class="text-center col-12 title-text"><strong>About us</strong></h2><br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem odit distinctio eum eos qui tenetur facilis pariatur quia, voluptate officiis iste? Velit asperiores hic vel cumque nostrum blanditiis sint aliquam?</p>
+    <img src="./img/team.jpg " alt="Smiley face" width="600.7" class="img-sort" height="400" >
   </div>
+    
+
+
+    <a id="contact">
+    <div class="contact-container">
+      <form action="post">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email..">
+    
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"placeholder="Your phone number..">
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Get in touch.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  </a>
 
 </div>
   <footer class="zone yellow">made by z => m</footer>
