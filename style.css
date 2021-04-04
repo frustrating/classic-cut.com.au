@@ -79,6 +79,14 @@ a {
     justify-content: center;
 }
 
+.contact-container {
+    /*show heigh: auto*/
+    height: 50vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /***********************************************************************
  *  Grid Panel
  **********************************************************************/
