@@ -90,34 +90,6 @@
 </div>
   <footer class="zone yellow">made by z => m</footer>
 </div>
-<script>
-  $('.contact1-form').on('submit',function(e){
-        //optional validation code here
-  
-        e.preventDefault();
-      
-        $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbwIQEvLMP5r0PLFLettEFJ1S8N0ASUVqbnTyx5cZM16mJsoM3xy4Iw9fjzlAVCvhEMiBw/exec",
-            method: "POST",
-            dataType: "json",
-            data: $(".contact1-form").serialize(),
-            success: function(response) {
-                
-                if(response.result == "success") {
-                    $('.contact1-form')[0].reset();
-                    alert('Thank you for contacting us.');
-                    return true;
-                }
-                else {
-                    alert("Something went wrong. Please try again.")
-                }
-            },
-            error: function() {
-                
-                alert("Something went wrong. Please try again.")
-            }
-        })
-    });
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
