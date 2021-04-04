@@ -1,32 +1,123 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Classic-Cut</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Google Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-      <!-- Bootstrap CSS from a CDN. -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <style>
-         html {
-         cursor: url(images/my-cursor.PNG), auto;
-         }
-      </style>
-   </head>
-   <body>
-      <div class="container d-flex d-flex align-items-center h-100">
-         <div class = row>
-            <header class="text-center col-12">
-               <h1><strong>Coming Soon</strong></h1>
-            </header>
-            <img src="logo.jpg" class="img-fluid" alt="Classic Cut Logo"  width="500" height="600">
-            <section class="text-center col-12">
-               <div class='buffer col-12'>
-               </div>
-               <hr>
-            </section>
-         </div>
+<head>
+  <title>Layout Master</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+</head>
+<body>
+  <nav class="zone green">
+    <ul class="main-nav">
+        <li><a href="classic-cut.com.au"><img src="./img/main-transparent-high.png " alt="Smiley face" width="145.7" height="80" ></a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">What we do</a></li>
+        <li><a href="">Our Team</a></li>
+        <li class="push"><a href="">Get in touch</a></li>
+    </ul>
+  </nav>
+  <div class="container zone red">
+    <img src="./img/main-transparent-high.png " class="main-img" alt="Smiley face" width="600" height="280" ><br>
+    <h1 class="text-center col-12 title-text"><strong>Locally owned and operated with over 30 years experience.</strong></h1>
+  </div>
+    <div>
+  
+    
+  
+  
+  </div>
+  
+  <div class="zone blue grid-wrapper">
+    <div class="box zone"><img src="./img/files_2.png"></div>
+    <div class="box zone"><img src="./img/server_2_2.png"></div>
+    <div class="box zone"><img src="./img/monitor_settings_2.png"></div>
+    <div class="box zone"><img src="./img/server_3.png"></div>
+    <div class="box zone"><img src="./img/data_storage_2_2.png"></div>
+    <div class="box zone"><img src="./img/monitor_coding_2.png"></div>
+    <div class="box zone"><img src="./img/desktop_analytics_2.png"></div>
+    <div class="box zone"><img src="./img/server_safe_2.png"></div>
+  </div>
+
+
+
+  </div>
+
+
+<div class="contact1">
+  <div class="container-contact1">
+    <div class="contact1-pic js-tilt" data-tilt>
+      <img src="images/img-01.png" alt="IMG">
+    </div>
+
+    <form class="contact1-form validate-form">
+      <span class="contact1-form-title">
+        Get in touch
+      </span>
+
+      <div class="wrap-input1 validate-input" data-validate = "Name is required">
+        <input class="input1" type="text" name="name" placeholder="Name">
+        <span class="shadow-input1"></span>
       </div>
-   </body>
+
+      <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+        <input class="input1" type="text" name="email" placeholder="Email">
+        <span class="shadow-input1"></span>
+      </div>
+
+      <div class="wrap-input1 validate-input" data-validate = "Subject is required">
+        <input class="input1" type="text" name="subject" placeholder="Subject">
+        <span class="shadow-input1"></span>
+      </div>
+
+      <div class="wrap-input1 validate-input" data-validate = "Message is required">
+        <textarea class="input1" name="message" placeholder="Message"></textarea>
+        <span class="shadow-input1"></span>
+      </div>
+
+      <div class="container-contact1-form-btn">
+        <button class="contact1-form-btn">
+          <span>
+            Submit
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+  <footer class="zone yellow">made by z => m</footer>
+</div>
+<script>
+  $('.contact1-form').on('submit',function(e){
+        //optional validation code here
+  
+        e.preventDefault();
+      
+        $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbwIQEvLMP5r0PLFLettEFJ1S8N0ASUVqbnTyx5cZM16mJsoM3xy4Iw9fjzlAVCvhEMiBw/exec",
+            method: "POST",
+            dataType: "json",
+            data: $(".contact1-form").serialize(),
+            success: function(response) {
+                
+                if(response.result == "success") {
+                    $('.contact1-form')[0].reset();
+                    alert('Thank you for contacting us.');
+                    return true;
+                }
+                else {
+                    alert("Something went wrong. Please try again.")
+                }
+            },
+            error: function() {
+                
+                alert("Something went wrong. Please try again.")
+            }
+        })
+    });
+</script>
+</body>
 </html>
