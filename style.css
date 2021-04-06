@@ -115,8 +115,7 @@ a {
 
 .blurb{
   font-family: 'Bad Script', cursive;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: black;
+  
   font-size: 3em;
 
 }
@@ -173,6 +172,7 @@ a {
 
 #contact-title{
   text-align: center;
+  font-weight: bold;
 }
 
 input[type=text], select, textarea {
@@ -572,6 +572,11 @@ footer {
   
 }
 
+#phone{
+
+
+}
+
 .cool-icon{
   list-style-image: url(img/bullet.png);
 
@@ -583,5 +588,10 @@ footer {
 
 
   list-style-type:none;
+
+}
+
+#hidden-iframe{
+  display: none;
 
 }

@@ -107,34 +107,37 @@
   </div>
     </a>
 
-
+<!-- GOOGLE FORM THAT CONNECTS TO CONTACT PAGE, ALLOWING CONTACT FORM ON STATIC WEBPAGE-->
     <a id="contact">
       <h1 class="txt-title">Get In Touch</h1><br>
       <div class="container1">
-        <h2 id="contact-title">Leave us a message with your next project and we will get back to you shortly</h2>
-        <form action="POST">
+        <h2 id="contact-title">Leave us a message with your next project and we will get back to you shortly.</h2>
+        <form id ="gform" name ="gform" target="hidden_iframe" onsubmit="submitted=true;"
+        action="https://docs.google.com/forms/d/e/1FAIpQLScLUkPI6ivhGTyn74SL-GevvtMRyx00v8W8qAV3JCPXXnwjxQ/formResponse?">
+
+
           <div class="row">
             <div class="col-25">
-              <label for="fname"><strong>Name</strong></label>
+              <label for="entry.783466205"><strong>Name</strong></label>
             </div>
             <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="entry.783466205" name="entry.783466205" placeholder="Your name..">
             </div>
           </div>
           <div class="row">
             <div class="col-25">
-              <label for="email"><strong>Email</strong></label>
+              <label for="entry.1304704137"><strong>Email</strong></label>
             </div>
             <div class="col-75">
-              <input type="email" id="email" name="email" placeholder="Your email address..">
+              <input type="email" id="entry.1304704137" name="entry.1304704137" placeholder="Your email address..">
             </div>
           </div>
           <div class="row">
             <div class="col-25">
-              <label for="phone"><strong>Phone number</strong></label>
+              <label for="entry.164180820"><strong>Phone number</strong></label>
             </div>
             <div class="col-75">
-              <input type="tel" id="phone" name="phone" placeholder="Your phone number.."pattern="(\(+61\)|\+61|\(0[1-9]\)|0[1-9])?( ?-?[0-9]){6,9}"><!--Regex for australian phone number validation -->
+              <input type="tel" id="entry.164180820" name="entry.164180820" placeholder="Your phone number.."pattern="(\(+61\)|\+61|\(0[1-9]\)|0[1-9])?( ?-?[0-9]){6,9}"><!--Regex for australian phone number validation -->
             </div>
           </div>
           <div class="row">
@@ -142,16 +145,22 @@
           </div>
           <div class="row">
             <div class="col-25">
-              <label for="subject"><strong>Inquiry</strong></label>
+              <label for="entry.2078914058"><strong>Inquiry</strong></label>
             </div>
             <div class="col-75">
-              <textarea id="Inquiry" name="Inquiry" placeholder="Get in touch!" style="height:200px"></textarea>
+              <textarea id="entry.2078914058" name="entry.2078914058" placeholder="Get in touch!" style="height:200px"></textarea>
             </div>
           </div>
           <div class="row">
             <input type="submit" value="Submit">
+
+
           </div>
         </form>
+
+        <iframe name="hidden_iframe" id="hidden-iframe" 
+        onload="if(submitted){}"></iframe>
+
       </div>
       
   </a>
@@ -165,6 +174,24 @@
   <p class="f7 db b ttu lh-solid"><span class="email"><strong>© Designed by Julian 2021</p></strong></span>
   
 </footer>
+<!--Link to JQuery-->
+<script 
+  src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+</script>
+<!--Checks if the form is submitted, if so do nothing lmao-->
+<script type="text/javascript">
+  var submitted = false;
+</script>
+
+<script type="text/javascript">
+  $('#gform').on('submit', function(e){
+    $('#gform *').fadeOut(2000);
+    //replaces the contact us message with the following
+    $('#contact-title').replaceWith("Thank you for your message, we will get back to your shortly!").fadeIn(3000);
+  });
+
+</script>
+
 
 
 </body>
