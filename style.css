@@ -47,7 +47,7 @@ body {
 }
 @media only screen and (max-width: 600px) {
     .main-nav {
-        font-size: 1em;
+        font-size: 1.2em;
         padding: 0;
     }
     .main-img{
@@ -61,6 +61,12 @@ body {
 
 .get-in-touch{
   background-color:#303b59;
+
+
+}
+
+.titles{
+  /*background-color :#303b59;*/
 
 
 }
