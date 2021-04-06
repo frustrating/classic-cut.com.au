@@ -2,12 +2,14 @@ html{
 
 
   font-family: 'Chivo', sans-serif;
+
     
 }
 body {
     margin: 0 auto;
     background-color: #f1eee9;
-   
+    background-image: url(img/backg1.jpg);
+    
 }
 
 .zone {
@@ -93,22 +95,51 @@ a {
     margin: 0 auto;
     max-width: 1450px;
 }
-#what-we-do-title{
-  grid-column: 1 / 4;
-  grid-row: 1;
+/***********************************************************************
+ *  MAIN LOGO
+ **********************************************************************/
+ .red {
+  /*background: rgb(48,59,89);*/
+  display:block;
+  padding:50px;
   text-align: center;
-  color: black;
+  margin: 20px;
+  height:auto;
+  max-width: 1450px;
+  margin:0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* background-image: url(img/concretegood.png);*/
   
+}
 
+.blurb{
+  font-family: 'Bad Script', cursive;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+  font-size: 3em;
 
 }
+.txt-title{
+  
+  text-align: center;
+  color: white;
+  max-width: 1450px;
+  text-align: center;
+  margin:0 auto;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  
+}
+
+
 /*About Us*/
 .about-us{
     height: auto; 
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(48,59,89,0.9);
+      background-color: #f2f2f2;
     text-align: center;
     display:block;
     padding: 20px;
@@ -126,7 +157,7 @@ a {
 
 .container1 {
   border-radius: 5px;
-  background-color: #f2f2f2;
+
   padding: 20px;
   margin:20px;
   border-radius: 5px;
@@ -135,7 +166,7 @@ a {
   margin:0 auto;
   margin-top: 20px;
   margin-bottom: 20px;;
-  opacity: 0.9;
+
   color: black;
   
 }
@@ -203,9 +234,7 @@ input[type=submit]:hover {
     margin: auto 0;
 
     /*show heigh: auto*/
-    
-
-    
+ 
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -214,19 +243,87 @@ input[type=submit]:hover {
     max-width: 1450px;
     margin: 0 auto;
     margin-bottom: 20px;
-    opacity: 0.9;
+    
 
 
 }
 
+h1{
+  font-size: 4em;
 
+}
+.box h2{
+  background-color:#303b59;
+}
+.box li{
+  color: black;
+  background-color: #bbb;
+  
+}
 .box {
     background-color:#72716f;
     padding: 130px;
     margin: 20px;
     padding: 20px;
+    grid-row:auto;
+    
 
 }
+
+.box-text{
+  font-weight: bold;
+  background-color: grey;
+}
+
+ 
+ .demo{ 
+
+  background-image: url(img/demog.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ .service{ 
+
+  background-image: url(img/pipeg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+
+}
+
+
+
+.beauty{
+  background-image: url(img/diamond.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.road{ 
+  background-image: url(img/roadg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+ .sus{ 
+  background-image: url(img/balcg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.confine{
+  background-image: url(img/cong.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+
+} 
+
+
 
 .box > img {
     width: 100%;
@@ -245,29 +342,13 @@ footer {
  *  Green Background
  **********************************************************************/
 .green {
-    background: #303b59; /* Old browsers */
+   /* background: #303b59; /* Old browsers */
     
    
     
 }
 
-/***********************************************************************
- *  MAIN LOGO
- **********************************************************************/
-.red {
-  background: rgb(48,59,89,0.9);
-  display:block;
-  padding:50px;
-  text-align: center;
-  margin: 20px;
-  height:auto;
-  max-width: 1450px;
-  margin:0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  
-  
-}
+
 /***********************************************************************
  *  Yellow Background
  **********************************************************************/
@@ -480,12 +561,21 @@ footer {
 }
 .footer-lol{
 
-  background-color:#b49c78;
+  
+  color: white;
 }
+.email{
 
+  color:white;
+  font-family: 'Chivo', sans-serif;
+  background-color: #303b59;
+  
+}
 
 .cool-icon{
   list-style-image: url(img/bullet.png);
+
+  
   
 }
 
@@ -493,4 +583,5 @@ footer {
 
 
   list-style-type:none;
+
 }
