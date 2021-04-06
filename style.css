@@ -47,9 +47,23 @@ body {
 }
 @media only screen and (max-width: 600px) {
     .main-nav {
-        font-size: 0.5em;
+        font-size: 1em;
         padding: 0;
     }
+}
+
+.get-in-touch{
+  background-color:#303b59;
+
+
+}
+.get-in-touch:hover{
+  color:#b73b6e;
+}
+
+.nav-text:hover{
+  background-color:#303b59;
+
 }
 
 .push {
