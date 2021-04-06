@@ -452,6 +452,7 @@ footer {
       width: 100%;
       margin-top: 0;
     }
+
   }
 
   .bt {
@@ -586,10 +587,6 @@ footer {
   
 }
 
-#phone{
-
-
-}
 
 .cool-icon{
   list-style-image: url(img/bullet.png);
