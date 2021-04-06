@@ -50,6 +50,13 @@ body {
         font-size: 1em;
         padding: 0;
     }
+    .main-img{
+      width:100%;
+    }
+    #team-img{
+      width:100%;
+
+    }
 }
 
 .get-in-touch{
@@ -431,12 +438,14 @@ footer {
     float: left;
     width: 25%;
     margin-top: 6px;
+    font-size: 2em;
   }
   
   .col-75 {
     float: left;
     width: 75%;
     margin-top: 6px;
+    font-size: 2em;
   }
   
   /* Clear floats after the columns */
