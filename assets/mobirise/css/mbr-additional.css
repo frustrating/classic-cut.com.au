@@ -685,8 +685,19 @@ body {
 a {
   transition: color 0.6s;
 }
+.cid-sTwcP6MqEM {
+  padding-top: 0rem;
+  padding-bottom: 3rem;
+  background-color: #fafafa;
+}
+.cid-sTwcP6MqEM .counter-container ol {
+  margin-bottom: 0;
+}
+.cid-sTwcP6MqEM .counter-container ol li {
+  margin-bottom: 1rem;
+}
 .cid-sTvTYw7PYe {
-  padding-top: 6rem;
+  padding-top: 10rem;
   padding-bottom: 6rem;
   background-image: url("../../../assets/images/mbr.jpg");
 }
